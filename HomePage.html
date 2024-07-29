@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Document</title>
+</head>
+<body>
+   <div class="cont">
+    <h1>TODO LIST</h1>
+    <div class="action">
+       
+    <div class="search">
+        <input id="search1" type="text" placeholder="Search note...">
+    </div>
+
+
+
+
+
+
+
+    <div class="dropdown">
+        <button class="dropbtn">All <img src="img/chevron-top.png" alt=""></button>
+        <div class="dropdown-content">
+            <a href="#" id="filter-all">All</a>
+            <a href="#" id="filter-complete">Complete</a>
+            <a href="#" id="filter-incomplete">Incomplete</a>
+        </div>
+      </div>
+
+      <div class="mood">
+      <button>
+        <img src="img/Vector (1).png" id="icon">
+      </button>
+      </div>
+
+
+
+
+   </div>
+
+  <div class="empty">
+    <img src="img/Detective-check-footprint 1.png" alt="">
+    <p>Empty...</p>
+  </div>
+
+  
+  <div class="todo-list">
+
+    <ul id="list-container">
+        <!-- <li class="checked">task 1</li>
+        <li>task 1</li>
+        <li>task 1</li> -->
+    </ul>
+</div>
+
+
+  <div class="add">
+    <button id="open-popup">
+        <img src="img/Vector (2).png" alt="">
+      </button>
+
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="overlay">
+      <div class="popup-content">
+      <h2>NEW NOTE</h2>
+      <input  type="text" id="input-box" placeholder="input your note...">
+      <div class="conrols">
+
+        <button class="close-btn" >Cancel</button>
+        <button class="Apply-btn" onclick="addTask()">Apply</button>
+      </div>
+     
+      </div>
+    </div>
+ 
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+    <script src="secrpt.js"></script>
+</body>
+
+</html>
